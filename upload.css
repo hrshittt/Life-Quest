@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    height:70px;
+   width: 1536px;
+   background-color: #EEEEEE;
+   opacity: 0.5;
+}
+
+.life-quest{
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+    font-weight: 500;
+}
+.contact{
+    text-align: end; 
+    padding-right: 20px;
+    padding-bottom: 30px; 
+    height: 100px; 
+    margin-top: -40px; 
+    font-weight: 500;
+    font-size: larger;
+}
+.choose {
+  margin: 120px;
+  padding-right: 30px;
+  padding-top: 60px;
+  position: relative;
+  z-index: 1; /* Below the icon */
+  font-size: 1rem;
+}
+
+#heading {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 10px;
+  text-transform: capitalize;
+  font-size: xx-large;
+}
+
+#upload-icon {
+  font-size: 10em;
+  opacity: 0.7;
+  color: #000;
+  margin-left: 230px;
+  position: absolute; /* Crucial to float above */
+  top: 80px;           /* Adjust as needed */
+  left: 100px;         /* Adjust as needed */
+  z-index: 2;          /* Above the input */
+}
+#submit{
+    font-size: 2em;
+    padding: 15px 40px;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(255, 65, 108, 0.6);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+}

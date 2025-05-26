@@ -1,0 +1,97 @@
+body{
+    min-height: 100vh;
+    background-image: url("https://www.rappler.com/tachyon/r3-assets/D11E15E63CE348C49135BA702A09159F/img/3F4BCE70152143FFAA991039CED86DC1/jobs-to-consider-20160228.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px); /* Blur reduced from 4px to 2px */
+  }
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrapper {
+      width: 350px;
+      padding: 30px;
+      background: #222;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .wrapper h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+      color: #00ffff;
+    }
+
+    .inputbox {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .inputbox input {
+      width: 100%;
+      padding: 12px 40px 12px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .inputbox i {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aaa;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: #00ffff;
+      color: black;
+      font-weight: bold;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00cccc;
+    }
+
+    .registerlink {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .registerlink a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    .registerlink a:hover {
+      text-decoration: underline;
+    }
