@@ -66,7 +66,7 @@ body {
       color: white;
       display: block;
       padding: 12px 20px;
-      text-decoration: none;
+      text-decoration: none; 
     }
 
     .sidebar a:hover {
