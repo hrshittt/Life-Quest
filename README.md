@@ -1,2 +1,2 @@
 # Life-Quest
-A resume quesion generator
+A resume question generator
