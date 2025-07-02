@@ -1,0 +1,196 @@
+body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    canvas {
+      display: block;
+    }
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2rem;
+      font-family: sans-serif;
+      z-index: 10;
+      text-align: center;
+    }
+.nav{
+   height: 70px;
+   width: 110rem;
+   background-color: #EEEEEE;
+   opacity: 0.5;
+}
+.anchors{
+  height: 70px;
+  margin-bottom: 70px;
+  margin-left: 80%;
+  font-size: medium;
+  font-style:italic;
+  background-color: cornflowerblue;
+}
+#home{
+  margin-right: 800px;
+  font-weight: bold;
+}
+#contact{
+  margin-right: 600px;
+  font-weight: bolder;
+}
+#logout{
+  margin-right: 500px;
+  font-weight: bolder;
+}
+
+
+body {
+      background-color: #000; /* black background */
+      color: white;
+    }
+
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #212529;
+      padding-top: 60px;
+      z-index: 1000;
+    }
+
+    .sidebar a {
+      color: white;
+      display: block;
+      padding: 12px 20px;
+      text-decoration: none; 
+    }
+
+    .sidebar a:hover {
+      background-color: #343a40;
+    }
+
+    .main-content {
+      margin-left: 250px;
+      padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .main-content {
+        margin-left: 0;
+      }
+    }
+    #logout:hover{
+  background-color: red;
+}
+.sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #212529;
+      padding-top: 60px;
+      transition: transform 0.3s ease;
+      transform: translateX(-100%);
+      z-index: 1000;
+    }
+
+    .sidebar.active {
+      transform: translateX(0);
+    }
+
+    .sidebar a {
+      color: white;
+      display: block;
+      padding: 12px 20px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #343a40;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #hamburger {
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1100;
+    }
+
+    .main-content {
+      padding: 60px 20px;
+      margin-left: 0;
+    }
+
+.nav .life-quest{
+  color: black;
+  font-size: larger;
+  font-weight:600;
+  margin-left:45%;
+  padding-top: 20px;
+}
+.nav .contact{
+  margin-left:30%;
+  padding-top: 20px;
+  padding-left:30px;
+  font-size: large;
+  color: black;
+  font-style: oblique;
+  z-index: 10;
+}
+
+#bg-canvas {
+  position: fixed;     /* stays in place as you scroll */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;         /* puts it behind everything */
+  pointer-events: none; /* makes sure it's not clickable */
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.sidebar a i{
+  vertical-align: middle;
+  margin-left: 6px;
+}
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -9999; /* far behind any content */
+  pointer-events: none; /* ensures no click interference */
+  background: transparent;
+  color: aquamarine;
+}

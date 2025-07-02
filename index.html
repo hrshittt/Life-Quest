@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Quest</title>
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <div id="tsparticles"></div>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="life-quest">Life Quest</div>
+    <div class="contact">Contact - xxxxxxxxxx</div>
+  </nav>
+
+  <!-- Welcome Overlay -->
+  <div class="overlay-text">
+    <h1>Welcome to Life Quest</h1>
+    <p>Fill the Gap Between what you know & what you need!</p>
+  </div>
+
+  <!-- Hamburger Button -->
+  <button id="hamburger">☰</button>
+
+  <!-- Sidebar Navigation -->
+  <div id="sidebar" class="sidebar">
+    <span id="closeBtn" class="close-btn">&times;</span>
+    <a href="index.html">Dashboard</a>
+    <a href="#About-section" id="About">About</a>
+    <a href="upload.html" target="_blank">
+      <span class="material-icons">upload_file</span>Upload Resume
+    </a>
+    <a href="#">Settings</a>
+    <a href="#testimonials_section" id="Testimonials">Testimonials</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <div id="blank"></div>
+
+  <!-- About Section -->
+  <section id="About-section" class="career-insights-section" style="margin-top: 1020px; background-color: grey; padding: 10px; border-radius: 2rem; margin-left: 100px; margin-right: 100px; color: #000;">
+    <div class="container">
+      <h2 style="text-align: center;">About Us</h2>
+      <p>
+        At Life Quest, we believe a resume is more than just a list of qualifications — it’s a reflection of your journey, your aspirations, and your potential. That’s why we’ve built a platform that goes beyond traditional tools. We don’t just read resumes — we understand them, interpret them, and convert them into actionable career insights.
+
+We are committed to reshaping the way individuals plan their careers. Through cutting-edge technology, personalized assessments, and AI-powered question generation, we help you identify your strengths, weaknesses, and hidden opportunities. Our platform doesn’t just tell you where you are — it shows you where you can go.
+
+Whether you're preparing for your first job interview, aiming for a promotion, or switching careers entirely, Life Quest is your intelligent companion. With every resume upload, our engine analyzes your experience, skills, and achievements, generating custom-tailored questions that challenge you, motivate you, and prepare you for what’s next.
+
+We work at the intersection of innovation and purpose. Our team includes educators, developers, career strategists, and AI specialists — all driven by one mission: to empower you with clarity, confidence, and direction.
+
+We are not just building a website — we are building a movement. A movement toward informed career development, equitable opportunities, and a future where everyone has the tools to thrive. Life Quest is for the curious learner, the ambitious professional, the lost dreamer, and the fearless changer.
+
+<br>
+<br>
+ <h4> Join us as we turn resumes into revelations, and aspirations into action !!</h4>
+
+
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <h1 style="text-align: center; margin-top: 300px; padding-bottom: 10px;">Testimonials</h1>
+
+  <section id="testimonials_section" class="testimonials py-5">
+    <div class="container">
+      <div class="row justify-content-center g-4">
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card mx-auto" style="width: 300px; height: 100%;">
+            <img src="/Life-Quest/pexels-olly-3769021.jpg" class="card-img-top" alt="Dr. Anjali Deshmukh">
+            <div class="card-body">
+              <h5 class="card-title">Dr. Anjali Deshmukh — Career Counselor</h5>
+              <p class="card-text">Life Quest bridges the gap between traditional career counseling and modern, data-driven guidance. It’s a must-use tool for every student.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card mx-auto" style="width: 300px; height: 100%;">
+            <img src="/Life-Quest/pexels-olly-834863.jpg" class="card-img-top" alt="Prof. Vivek Rao">
+            <div class="card-body">
+              <h5 class="card-title">Prof. Vivek Rao — Placement Officer</h5>
+              <p class="card-text">The platform empowers students with personalized growth maps. We’ve seen more confidence and better-prepared candidates since introducing Life Quest.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Local JS -->
+  <script src="index.js"></script>
+ 
+  <script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false },
+    background: {
+      color: {
+        value: "#000"  // or transparent if you don't want color
+      }
+    },
+    particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          area: 800
+        }
+      },
+      color: {
+        value: "#ffffff"
+      },
+      shape: {
+        type: "circle"
+      },
+      opacity: {
+        value: 0.5
+      },
+      size: {
+        value: 3
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        direction: "none",
+        outModes: "bounce"
+      },
+      links: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: {
+          enable: true,
+          mode: "repulse"
+        },
+        onClick: {
+          enable: true,
+          mode: "push"
+        }
+      },
+      modes: {
+        repulse: {
+          distance: 100
+        },
+        push: {
+          quantity: 4
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>
